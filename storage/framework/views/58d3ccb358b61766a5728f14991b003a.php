@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('style'); ?>
 <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -241,6 +240,7 @@
 
     $(document).on('click', '.modalPay', function(e) {
         var total = $(this).data('total');
+        var id = $(this).data('id');
         Swal.showLoading();
         $.ajax({
             type: "post",
@@ -256,7 +256,7 @@
                 $('#modal-pay').modal('show');
                 $('#totalPay').html(total + ' บาท');
                 $('#qr_code').html(response);
-                $('#order_id').val($(this).data('id'));
+                $('#order_id').val(id);
             }
         });
     });
