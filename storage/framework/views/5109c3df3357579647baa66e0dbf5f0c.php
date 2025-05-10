@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('style'); ?>
 <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
 <?php $__env->stopSection(); ?>
