@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('style'); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
@@ -12,7 +11,7 @@
                             <?php echo csrf_field(); ?>
                             <div class="card">
                                 <div class="card-header">
-                                    เพิ่มหมวดหมู่
+                                    แก้ไขหมวดหมู่
                                     <hr>
                                 </div>
                                 <div class="card-body">
