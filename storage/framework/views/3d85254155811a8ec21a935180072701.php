@@ -23,12 +23,12 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/fonts/boxicons.css')); ?>" />
     <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/css/core.css')); ?>" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/css/theme-default.css" class="template-customizer-theme-css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/css/theme-default.css')); ?>" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="<?php echo e(asset('assets/css/demo.css')); ?>" />
     <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')); ?>" />
     <link rel="stylesheet" href="<?php echo e(asset('assets/vendor/css/pages/page-auth.css')); ?>" />
-    <script src="asset('assets/vendor/js/helpers.js')"></script>
-    <script src="asset('assets/js/config.js')"></script>
+    <script src="<?php echo e(asset('assets/vendor/js/helpers.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/js/config.js')); ?>"></script>
 </head>
 
 <body>
