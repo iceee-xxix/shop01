@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('style'); ?>
 <style>
     .btn-custom {
@@ -81,7 +80,19 @@
                                     <div class="row g-3 mb-3">
                                         <div class="col-md-12">
                                             <div class="input-group mb-3">
-                                                <input class="form-control" type="text" id="image_qr" name="image_qr" maxlength="13" value="<?php echo e($config->image_qr); ?>">
+                                                <input class="form-control" type="text" id="promptpay" name="promptpay" maxlength="13" value="<?php echo e($promptpay); ?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6>ไฟล์ QR-Code</h6>
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-12">
+                                            <div class="input-group mb-3">
+                                                <input class="form-control" type="file" id="image_qr" name="image_qr">
+                                                <a href="<?php echo e(($config->image_qr) ? url('storage/'.$config->image_qr) : 'javascript:void(0);'); ?>"
+                                                    <?php echo e(($config->image_qr) ? 'target="_blank" ' : ''); ?>
+
+                                                    class="btn btn-outline-secondary" type="button"><i class="bx bx-search-alt-2"></i></a>
                                             </div>
                                         </div>
                                     </div>

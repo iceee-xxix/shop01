@@ -26,6 +26,12 @@ $config = Config::first();
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
+        <li class="menu-item <?php echo e(($function_key == 'order') ? 'active' : ''); ?>">
+            <a href="<?php echo e(route('adminorder')); ?>" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-store"></i>
+                <div data-i18n="Analytics">ออเดอร์หน้าร้าน</div>
+            </a>
+        </li>
         <li class="menu-header small text-uppercase"><span class="menu-header-text">ตั้งค่า</span></li>
         <li class="menu-item <?php echo e(($function_key == 'config') ? 'active' : ''); ?>">
             <a href="<?php echo e(route('config')); ?>" class="menu-link">
